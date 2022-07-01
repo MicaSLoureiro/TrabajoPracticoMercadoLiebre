@@ -1,0 +1,57 @@
+header{
+    background-color: var(--amarillo);
+    padding-bottom: 30px;
+}
+.logo{
+    height: 40px;
+    margin: 25px 0
+}
+.barraBusqueda input{
+    background-color: var(--blanco);
+    padding: 3px;
+    border: 1px solid var(--grisoscuro);
+    border-radius: 2px;
+    margin-left: 20px;
+}
+#lupa{
+    background-color: var(--blanco);
+    display: block;
+
+}
+.barraBusqueda button{
+    padding: 3px;
+    border: 1px solid var(--grisoscuro);
+    border-radius: 2px;
+    margin: 1px 0 0 20px;
+}
+h1{
+    font-size: var(--cuerposDeTexto);
+    text-align: center;
+    font-weight: 500;
+}
+ul a{
+    text-decoration: none;
+    color: var(--negro);
+    font-size: var(--cuerposDeTexto);
+}
+header i{
+    font-weight: bold;
+}
+.navbar{
+    margin: 20px 0;
+}
+.loginbar{
+    margin-bottom: 20px;
+}
+.menu{
+    padding: 10px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--celeste);
+    font-size: 24px;
+    color: var(--blanco);
+    border-radius: 5px;
+    border: none;
+    width: 46px;
+}

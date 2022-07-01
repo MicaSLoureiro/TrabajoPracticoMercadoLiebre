@@ -1,0 +1,20 @@
+footer{
+    text-align: center;
+}
+footer h2 i{
+    color: var(--celeste);
+    font-size: 40px;
+    padding: 50px 0 15px;
+}
+footer h4{
+    font-size: var(--descripciones);
+
+}
+footer p{
+    font-size: var(--cuerposDeTexto);
+    padding: 0 50px 50px ;
+}
+.copyright{
+    text-align: start;
+    padding: 0 15px 20px;
+}
