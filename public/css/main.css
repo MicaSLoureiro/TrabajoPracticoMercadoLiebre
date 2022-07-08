@@ -1,4 +1,73 @@
-main{
+body{
     background-color: var(--grisclaro);
-    margin: 50px o 50px;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+main .banner{
+    display: none;
+}
+main section{
+    padding: 20px 0;
+}
+main section h2{
+    font-size: var(--titulares);
+    color: var(--grisoscuro);
+}
+main section article{
+    background-color: var(--blanco);
+    margin-top: 10px;
+}
+main section article:last-child{
+    padding-bottom: 0;
+}
+main section article:first-child{
+    padding: 0;
+}
+main section article image{
+    width: 100%;
+}
+main section article .caja{
+    border-top: 1px solid var(--grisclaro);
+    padding: 15px;
+}
+#truck{
+    font-size: var(--cuerposDeTexto);
+    color: var(--verde);
+    padding: 8px;
+    border: solid 1px var(--verde);
+    border-radius: 50%;
+    margin-top: 20px;
+}
+main section article .precio{
+    font-size: var(--precios);
+}
+main section article .oferta{
+    font-size: var(--descuentos);
+    color: var(--verde);
+}
+main section article h4{
+    font-size: var(--descuentos);
+    font-weight: 400;
+    color: var(--grisoscuro);
+    margin-top: 20px;
+    display: none;
+}
+
+/* Tablet */
+@media (min-width:461px) {
+    main section article h4{
+        display: block;
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+/* Laptop */
+@media (min-width:769px) {
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }

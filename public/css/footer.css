@@ -1,20 +1,21 @@
 footer{
     text-align: center;
+    background-color: var(--blanco);
 }
 footer h2 i{
     color: var(--celeste);
     font-size: 40px;
     padding: 50px 0 15px;
 }
-footer h4{
+footer article h4{
+    color: var(--grisoscuro);
     font-size: var(--descripciones);
-
 }
-footer p{
+footer article{
     font-size: var(--cuerposDeTexto);
     padding: 0 50px 50px ;
 }
-.copyright{
+footer article:last-child{
     text-align: start;
     padding: 0 15px 20px;
 }

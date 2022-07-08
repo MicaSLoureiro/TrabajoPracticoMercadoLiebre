@@ -2,34 +2,33 @@ header{
     background-color: var(--amarillo);
     padding-bottom: 30px;
 }
-.logo{
+header .logo{
     height: 40px;
     margin: 25px 0
 }
-.barraBusqueda input{
+header .barraBusqueda input{
     background-color: var(--blanco);
     padding: 3px;
     border: 1px solid var(--grisoscuro);
     border-radius: 2px;
     margin-left: 20px;
 }
-#lupa{
+header #lupa{
     background-color: var(--blanco);
-    display: block;
-
 }
-.barraBusqueda button{
+header .barraBusqueda button{
     padding: 3px;
     border: 1px solid var(--grisoscuro);
     border-radius: 2px;
-    margin: 1px 0 0 20px;
+    margin: 1px 0 0 0;
 }
-h1{
+header h1{
     font-size: var(--cuerposDeTexto);
     text-align: center;
     font-weight: 500;
+    margin-top: 10px;
 }
-ul a{
+header ul a{
     text-decoration: none;
     color: var(--negro);
     font-size: var(--cuerposDeTexto);
@@ -38,20 +37,44 @@ header i{
     font-weight: bold;
 }
 .navbar{
+    display: none;
     margin: 20px 0;
 }
-.loginbar{
+header .loginbar{
+    display: none;
     margin-bottom: 20px;
 }
-.menu{
+header .menu{
     padding: 10px;
     text-align: center;
     display: block;
-    margin: 0 auto;
+    margin: 30px auto 0;
     background-color: var(--celeste);
     font-size: 24px;
     color: var(--blanco);
     border-radius: 5px;
     border: none;
     width: 46px;
+}
+@media (min-width:461px){
+    header .navbar{
+        display: block;
+    }
+    header .loginbar{
+        display: block;
+    }
+    header .menu{
+        display: none;
+    }
+}
+@media (min-width:769px){
+    header .navbar{
+        display: block;
+    }
+    header .loginbar{
+        display: block;
+    }
+    header .menu{
+        display: none;
+    }
 }
