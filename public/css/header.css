@@ -2,25 +2,40 @@ header{
     background-color: var(--amarillo);
     padding-bottom: 30px;
 }
+header .encabezado{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 header .logo{
-    height: 40px;
+    width: 50%;
+    height: 100%;
     margin: 25px 0
+}
+header .cajaBarraBusqueda{
+    width: 50%;
+}
+header .barraBusqueda{
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    margin: 0 20px;
+    overflow: hidden;
+    padding-right: 5px;
+    max-width: 250px;
 }
 header .barraBusqueda input{
     background-color: var(--blanco);
-    padding: 3px;
-    border: 1px solid var(--grisoscuro);
-    border-radius: 2px;
-    margin-left: 20px;
+    padding: 5px;
+    border: none;
+    width: 90%;
 }
 header #lupa{
     background-color: var(--blanco);
 }
 header .barraBusqueda button{
-    padding: 3px;
-    border: 1px solid var(--grisoscuro);
-    border-radius: 2px;
-    margin: 1px 0 0 0;
+    padding: 5px;
+    border: none;
 }
 header h1{
     font-size: var(--cuerposDeTexto);
@@ -42,7 +57,6 @@ header i{
 }
 header .loginbar{
     display: none;
-    margin-bottom: 20px;
 }
 header .menu{
     padding: 10px;
@@ -57,6 +71,23 @@ header .menu{
     width: 46px;
 }
 @media (min-width:461px){
+    header .encabezadoTablet{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header .encabezadoTablet .encabezado{
+        width: 60%;
+    }
+    header .encabezadoTablet h1{
+        width: 30%;
+    }
+    header .encabezadoTablet .encabezado .barraBusqueda{
+        margin: 0;
+    }
+    header .cajaBarraBusqueda{
+        margin-left: 30px;
+    }
     header .navbar{
         display: block;
     }
@@ -65,6 +96,19 @@ header .menu{
     }
     header .menu{
         display: none;
+    }
+    header .divNavbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .divNavbar .navbar, header .divNavbar .loginbar{
+        width: 30%;
+    }
+    header .divNavbar .navbar ul, header .divNavbar .loginbar ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
     }
 }
 @media (min-width:769px){
@@ -76,5 +120,8 @@ header .menu{
     }
     header .menu{
         display: none;
+    }
+    header .cajaBarraBusqueda{
+        margin-left: 80px;
     }
 }

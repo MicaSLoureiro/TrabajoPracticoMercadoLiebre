@@ -31,21 +31,33 @@ main section article image{
 main section article .caja{
     border-top: 1px solid var(--grisclaro);
     padding: 15px;
+    position: relative;
 }
-#truck{
-    font-size: var(--cuerposDeTexto);
+main section article .caja #truck{
     color: var(--verde);
+    display: block;
+    font-size: var(--cuerposDeTexto);
     padding: 8px;
-    border: solid 1px var(--verde);
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--verde);
+    background-color: #FFF;
     border-radius: 50%;
-    margin-top: 20px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+   }
+main section article .caja .texto{
+    display: flex;
 }
 main section article .precio{
     font-size: var(--precios);
+    flex-grow: 0.3;
 }
 main section article .oferta{
     font-size: var(--descuentos);
     color: var(--verde);
+    flex-grow: 0.7;
 }
 main section article h4{
     font-size: var(--descuentos);
@@ -57,8 +69,18 @@ main section article h4{
 
 /* Tablet */
 @media (min-width:461px) {
+    main section .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    main section .productos article{
+        width: 45%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
     main section article h4{
         display: block;
+
     }
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -67,7 +89,7 @@ main section article h4{
 
 /* Laptop */
 @media (min-width:769px) {
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    main section .productos article{
+        width: 20%;
     }
 }
