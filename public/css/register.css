@@ -1,0 +1,96 @@
+.register h1{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline  ;
+    font-size: 40px;
+    color: rgb(255, 251, 44);
+    text-shadow: 1px 1px 2px rgb(73, 73, 73);
+}
+.register form{
+    width: 80%;
+    margin: 20px auto 50px;
+    position: relative;
+}
+.register form label{
+    display: block;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.register form input{
+    width: 100%;
+}
+.register form .select input{
+    width: 7%;
+}
+.register form input{
+    margin: 5px 20px;
+}
+.register form .box-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.register form button{
+    width: 80px;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0 40px 5px;
+}
+.register form button.reset{
+    background-color: rgb(207, 46, 46);
+}
+.register form button.submit{
+    background-color: rgb(74, 168, 30);
+}
+.register form button.reset:hover{
+    background-color: rgb(155, 36, 36);
+    box-shadow: 2px 2px 2px rgb(173, 173, 173);
+}
+.register form button.submit:hover{
+    background-color: rgb(51, 114, 22);
+    box-shadow: 2px 2px 2px rgb(173, 173, 173);
+}
+.register .validacion{
+    color: red;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 0px;
+}
+@media (min-width:451px) {
+    .register form{
+        width: 70%;
+    }
+}
+@media (min-width:769px) {
+    .register form{
+        width: 40%;
+    }
+    .register form label{
+        font-size: 20px;
+        margin: 10px 0 3px 0;
+    }
+    .register form input{
+        height: 35px;
+    }
+    .register form .select{
+        margin-left: 50px;
+    }
+    .register form .select input{
+        height: 20px;
+        width: 7%;
+    }
+    .register form button{
+        margin: 20px 0 40px 10px;
+        width: 120px;
+        height: 40px;
+        font-size: 20px;
+    }
+}

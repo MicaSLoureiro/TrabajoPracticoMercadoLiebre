@@ -102,7 +102,7 @@ header .menu{
         justify-content: space-between;
     }
     header .divNavbar .navbar, header .divNavbar .loginbar{
-        width: 30%;
+        width: 50%;
     }
     header .divNavbar .navbar ul, header .divNavbar .loginbar ul{
         display: flex;
@@ -112,6 +112,9 @@ header .menu{
     }
 }
 @media (min-width:769px){
+    header .divNavbar .navbar, header .divNavbar .loginbar{
+        width: 30%;
+    }
     header .navbar{
         display: block;
     }
